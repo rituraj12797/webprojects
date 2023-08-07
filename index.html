@@ -702,7 +702,7 @@
             width: 100%;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
         }
         .circle {
             position: absolute;
@@ -890,6 +890,10 @@
             height: 30vh;
             overflow-y: hidden;
             width: 100vw;
+        }
+        .skill-icons
+        {
+            height: 70vh;
         }
         .john-in-the-footer
         {
@@ -1652,6 +1656,8 @@
         }
         .text {
             padding: 0 5vh;
+            width: 120%;
+            justify-self: center;
             display: grid;
             grid-template-rows: 1fr 1fr 6fr;
             row-gap: 1vh;
@@ -1700,10 +1706,10 @@
         }
         .iconsection {
             position: absolute;
-            top: 0;
+            top: 30%;
+            height: 60%;
             left: 0;
             z-index: 1;
-            height: 100%;
             width: 100%;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -1711,11 +1717,11 @@
         }
         .circle {
             position: absolute;
-            top: -10%;
+            top: 13%;
 
-            left: 0;
-            height: 94%;
-            width: 94%;
+            left: -8%;
+            height: 15rem;
+            width: 15rem;
             border-radius: 50%;
             border: 1vh white;
 
@@ -1801,11 +1807,13 @@
             width: 17vw;
         }
         }
-         @media (min-width: 280px) and (max-width: 320px) {
+
+        @media (min-width: 260px) and (max-width: 320px) {
         
-        .skill-icons
+        .iconsection
         {
-            height: 46vh;
+            height: 40vh;
+            
         }
         .sendtext
         {
@@ -1828,10 +1836,8 @@
             left: 11vw;
             width: 41vw;
         }
+         
         }
-
-
-
 
 
 
@@ -1851,9 +1857,7 @@
     <div class="wrapper">
         <div class="container">
             <div class="nav" >
-                <div class="logo"> 
-                   
-                </div>
+                 
                 <div class="nav-items">
                     <a class="navs" href="#projects" title="visit my projects">Projects</a>
                     <a class="navs" href="#skills" title="visit skills">Skills</a>
@@ -2054,7 +2058,7 @@
                     Whether I'm designing robust frontend systems, crafting seamless user interfaces, or optimizing performance, I revel in the challenge of creating efficient and innovations. My dedication to continuous learning ensures I stay at the forefront of industry trends and enables me to deliver top-quality results. With my diverse skill set, I am eager to tackle complex projects and contribute to the success of any team or organization.</div>
 
             </div>
-            <div style="height:70vh " class="skill-icons">
+            <div   class="skill-icons">
                 <div class="circle"></div>
                 <div class="iconsection">
                     <div><img class="icon" src="projectimages/c.png" alt=""></div>
