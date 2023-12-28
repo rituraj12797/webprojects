@@ -14,25 +14,19 @@ width: 12px;
 height: 12px;
 }
 
-/* Set the color and shape of the thumb */
-/* Note: For Firefox and some other browsers */
+
 ::-webkit-scrollbar-thumb,
 ::-moz-scrollbar-thumb {
 background-color: darkgrey;
 border-radius: 6px; /* Make the thumb circular by setting half of the width as the radius */
 }
 
-/* Set the color of the scrollbar track */
-/* Note: This affects the track (area behind the thumb) in WebKit-based browsers */
-/* and the scrollbar track in Firefox */
+
 ::-webkit-scrollbar-track,
 ::-moz-scrollbar-track {
 background-color: black;
 }
 
-/* Set the height of the thumb */
-/* Note: Only works on some browsers like Firefox */
-/* You may need to adjust this value based on your preference */
 ::-moz-scrollbar-thumb {
 height: 50px; /* Shorter thumb */
 }
@@ -143,30 +137,6 @@ height: 50px; /* Shorter thumb */
 }
 #man {
     height: 50vh;
-    animation: man;
-    animation-timing-function: linear;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-@keyframes man {
-    0% {
-        transform: scale(0.9);
-        filter: grayscale(0.9);
-       
-    }
-
-    50% {
-        transform: scale(1.1);
-        filter: grayscale(0);
-        
-
-    }
-
-    100% {
-        transform: scale(0.9);
-        filter: grayscale(0.9);
-       
-    }
 }
 .herosectionleft {
     display: flex;
@@ -766,11 +736,11 @@ height: 50px; /* Shorter thumb */
     margin-top: 15vh ;
     margin-left: auto;
     margin-right: auto;
-    height:60vh;
+    height:70vh;
     width:70vw;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows:1fr 1fr 1fr 5fr;
+    grid-template-rows:1fr 1fr 1fr 5fr 1fr;
     row-gap: 5vh;
 }
 .form-element
@@ -795,6 +765,9 @@ top: 0vh;
 
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+input{
+    color: black;
+}
 textarea
 {
 color:rgb(0, 0, 0);
@@ -810,10 +783,9 @@ outline: 1px solid rgb(9, 180, 223);
 background-color: rgb(0, 0, 0);
 color:rgb(255, 255, 255);
 border: none;
+justify-self:start;
 z-index: 2;
 width:20vw;
-top: 5vh;
-left: 15vw;
 height:8vh;
 font-size: 3vh;
 padding: 1vh;
@@ -861,7 +833,7 @@ color: black;
 }
 .content-of-send-button
 {
-    height:100%;
+    height:50px;
     width:100%;
     display: flex;
   justify-content: center;
